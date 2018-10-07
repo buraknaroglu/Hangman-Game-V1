@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
  */
 
 @RestController
-@RequestMapping("/game")
+@RequestMapping("${spring.data.rest.basePath}/game")
 public class GameController extends BaseEntityController<Game, GameService> {
 
     @Autowired

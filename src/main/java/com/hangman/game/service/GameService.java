@@ -5,6 +5,7 @@ import com.hangman.game.data.entity.Game;
 import com.hangman.game.data.entity.Guess;
 import com.hangman.game.data.entity.Player;
 import com.hangman.game.data.repository.GameRepository;
+import com.hangman.game.enums.GameStatus;
 import com.hangman.game.response.JsonResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -72,6 +73,8 @@ public class GameService extends BaseService<Game> {
     public ServiceResult<JsonResponse> finishGame(Long gameId) {
         Optional<Game> optionalGame = getRepository().findById(gameId);
         if (optionalGame.isPresent()) {
+            optionalGame.get().setGameStatus(GameStatus.LOSE.toString());
+            getRepository().save(optionalGame.get());
             return new ServiceResult<>(new JsonResponse(GlobalConstants.GAME_FINISHE_SUCCESS_MESSAGE), HttpStatus.OK);
         }
         return new ServiceResult<>(new JsonResponse(GlobalConstants.GAME_NOT_FOUND_MESSAGE), HttpStatus.NOT_FOUND);

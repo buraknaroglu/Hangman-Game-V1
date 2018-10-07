@@ -24,7 +24,7 @@ Proje adam asmaca oyununun version 1 api'sidir. Projeyi build ettikten sonra tar
 
 - Projemiz Spring Boot Mvc projesidir.
 - Loglama için Aop kullanilmistir.
-- Rest Api'mizi dökümante edebilmek amaci ile swagger kullanildi.
+- Rest Api'mizi dökümante edebilmek amaci ile swagger kullanilmistir.
 - ORM aracı olarak Spring Data Jpa kullanilmistir.
 - Db icin Postgres SQL kullanilmisitir.
 - Datalarimizi mock'lamak icin Mockito kullanilmistir.

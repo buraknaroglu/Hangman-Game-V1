@@ -40,8 +40,8 @@ Projenin İntellij idea araciliyla build islemi:
   
 Projenin Docker araciliyla build islemi:  
   Asagidaki iki komut calistirilir ve projemizin build olaracaktir.
-  -> docker build -f Dockerfile -t hangman-game .
-  -> docker run -p 8080:8080 hangman-game
+  - docker build -f Dockerfile -t hangman-game .
+  - docker run -p 8080:8080 hangman-game
   NOT: Eger local ortamimizda calisan bir database'e baglanicaksak Docker conteiner'in icinden makinamizin localhost'una baglanmak icin     bir kac ayar yapmamiz gerekmektedir. Aksi halde localhost'unuzda olan database'inize connection kuramayacaksiniz ve proje build           olmayacaktir.
 
 

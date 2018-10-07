@@ -40,6 +40,7 @@ Projenin İntellij idea araciliyla build islemi:
   Projeyi Github'dan bilgisayarimizi indirdikten sonra İntellij idea acilir ve File->New->Module From Existing Source tıklanir ve projenin   oldugu dizin gosterilir. Maven secilir ve next'e basilarak proje eklenmis olur. Edit configuration acilir ve Spring Boot secilir main     class olarak HangmanGameApplication.java class' inin oldugu path verilir. JRE olarakta 1.8 secilir ve run edilir.
   
 Projenin Docker araciliyla build islemi:  
+
   Asagidaki iki komut calistirilir ve projemizin build olaracaktir.
   - docker build -f Dockerfile -t hangman-game .
   - docker run -p 8080:8080 hangman-game

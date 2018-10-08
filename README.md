@@ -20,7 +20,7 @@ Proje adam asmaca oyununun version 1 api'sidir. Projeyi build ettikten sonra tar
 
 * http://localhost:8080/hangman/v1/player/{playerId} -> Bu API oyuncu bilgisi detayını getirir.
 
-# Projenin Kullanılan Teknolojiler 
+# Projede Kullanılan Teknolojiler 
 
 - Projemiz Spring Boot Mvc projesidir.
 - Loglama için Aop kullanilmistir.
